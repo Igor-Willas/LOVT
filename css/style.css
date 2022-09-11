@@ -12,12 +12,33 @@ body {
     margin: 0% auto;
 }
 
+a {
+    text-decoration: none;
+}
+
 #cabecalho {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
     padding: 2% 6% ;
+    margin-bottom: 4%;
+    
     background: #FFFFFF;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.25);
-    margin-bottom: 4%;
+}
 
+.nome-logo {
+    display: flex;
+    flex-direction: row;
+}
+
+.span-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -45,12 +66,11 @@ body {
 /* CORPO DO SITE*/
 
 .banner {
-    text-align: center;
-    margin-bottom: 3%;
-}
-
-.banner img {
-    width: 608px;
+    background-image: url("../images/banner-principal.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 4% 0;
+    /* width: 608px; */
     height: 259px;
 }
 
@@ -60,12 +80,6 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    
-
-    border: 1px solid black;
-
-    background: #EEEEEE;
-    
 }
 
 /* PRIMEIRO MOVEL */
@@ -73,6 +87,11 @@ body {
 .movel-1 {
     display: flex;
     flex-direction: column;
+    width: 256px;
+
+    background: #EEEEEE;
+}
+.movel-1 img {
     width: 256px;
     height: 144px;
 }
@@ -83,7 +102,7 @@ body {
     font-size: 10px;
     line-height: 11px;
     text-align: justify;
-    padding: 0% 3%;
+    padding: 2% 3% 4%;
 
     color: #555555;
 }
@@ -138,7 +157,8 @@ body {
     display: flex;
     flex-direction: column;
     width: 256px;
-    height: 144px;
+
+    background: #EEEEEE;
 }
 
 .movel-2 p {
@@ -191,6 +211,91 @@ body {
 
     background: #FFFFFF;
     color: #DC9730;
+}
+
+.your-style {
+    text-align: center;
+    margin-top: 10%;
+    font-family: 'Ropa Sans';
+    font-weight: 400;
+    font-size: 29px;
+    line-height: 27px;
+    
+    color: #888888;
+}
+
+.banner-fundo-um {
+    background-image: url("../images/banner-industrial.svg");
+    background-size: cover;
+
+
+    margin: 20px 43px 10px;
+    width: 608px;
+    height: 80px;
+}
+
+.banner-fundo-dois {
+    background-image: url("../images/banner-moderno.svg");
+    background-size: cover;
+
+    
+    margin: 10px 43px;
+    width: 608px;
+    height: 80px;
+}
+
+.banner-fundo-tres {
+    background-image: url("../images/banner-classico.svg");
+    background-size: cover;
+
+    
+    margin: 10px 43px 45px;    
+    width: 608px;
+    height: 80px;
+    
+}
+
+.sessao-3 p {
+    font-family: 'Ropa Sans';
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 27px;
+    height: 80px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background: rgba(196, 196, 196, 0.5);
+    color: #FFFFFF;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 243px;
+    padding: 40px;
+    align-items: center;
+
+    background-color: #333333;
+}
+
+.nossas-informacoes {
+    display: flex;
+    flex-direction: column;
+}
+
+.nossas-informacoes span {
+    font-family: 'Ropa Sans';
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 13px;
+    margin: 7px 0;
+    text-align: justify;    
+
+    color: #FFFFFF;
 }
 
 
