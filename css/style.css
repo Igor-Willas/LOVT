@@ -70,8 +70,17 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     margin: 4% 0;
-    /* width: 608px; */
     height: 259px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 64px;
+}
+
+button {
+    border: none;
+    background: transparent;
 }
 
 /* SESSÃO-2*/
